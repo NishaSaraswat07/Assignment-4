@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profy</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/index.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Recipe Finder
+        </h1>
+    </header>
+    <br>
+    <div class="recipe-name">
+        <div class="input">
+            <input type="text" placeholder="Search Recipe..." id="searchid">
+            <ion-icon name="search" id="search-recipe"></ion-icon>
+        </div>
+        <div class="mealType">
+            <select id="choice">
+                <option value="default" id="default">MealType</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+        </div>
+    </div>
+        <div class="main">
+            <div class="search-result">
+                <div class="defaultPic">
+                    <img id="defaultIMG" src="./image/calum-lewis-vA1L1jRTM70-unsplash.jpg" alt="main pic" height="500px" width="700px">
+                    <p> TIME TO EAT! 😋</p>
+                </div>
+                <!-- <div class="item">
+                    <div class="item-img">
+                     <img class="image" src='./image/calum-lewis-vA1L1jRTM70-unsplash.jpg' alt="Recipe image" height="250px" width="300px">
+                   </div>
+                    <div class="data-container">
+                    <h2 class="title">Title</h2>
+                    <a href="#" target="_blank">View Recipe</a>
+                    </div>
+                    <p class="discription">
+                    Calories:3000
+                    </p>
+                </div> -->
+            </div>
+        </div>
+</body>
+</html>
