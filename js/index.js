@@ -56,6 +56,7 @@ function generateHTML(result){
     let htmlContent = "";
     for(let item of result){
         console.log(item);
+        let calories = `${item.recipe.calories}`;
         htmlContent += 
         `<div class="item">
             <div class="item-img">
@@ -66,7 +67,7 @@ function generateHTML(result){
             <a href="${item.recipe.url}" target="_blank">View Recipe</a>
             </div>
             <p class="discription">
-            Calories: ${item.recipe.calories}
+            Calories: ${parseFloat(calories).toFixed(2)}
             </p>
         </div>
     `   
