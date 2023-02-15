@@ -9,10 +9,10 @@ $(function () {
     $("#search-recipe").click(function () {
         search = $('#searchid').val();
         fetchRecipe();
-        function fetchRecipe() {
+        function fetchRecipe() { // The funtion should be written outside the click event, like you did with generateHTML()
             fetch(`${baseURL}&q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`)
                 .then((response) => {
-                    if(!response.ok){
+                    if(!response.ok){ // add spaces before and after the ( ) for readability
                         throw new Error(response.status)
                     }else{
                         return response.json()
@@ -28,7 +28,7 @@ $(function () {
                 });
                 
         }
-})
+}) // everything from here to line 77 should be indented one level for readability
 $("select#choice").change(function () {
     let mealType = $(this).children("option:selected").val();
     console.log(mealType);

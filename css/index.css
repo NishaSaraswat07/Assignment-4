@@ -10,8 +10,8 @@ html {
 
 body {
     background-color: #0F0F0F;
-}
-.recipe-name{
+} /* Empty line after each selector */
+.recipe-name{ /* Space before the { */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +150,7 @@ a{
         display: flex;
         flex-direction: column;
     }
-    .mealType{
+    .mealType{ /* Indentation is a little odd */
         display: block;
         position:relative;
         margin-right: 400px;
